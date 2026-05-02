@@ -5,13 +5,21 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.FilterRegistration;
 
 @SpringBootApplication
+@RestController
 public class EshopApplication {
     public static void main(String[] args) {
         SpringApplication.run(EshopApplication.class, args);
+    }
+
+    @GetMapping("/api/test")
+    public String test() {
+        return "DON'T PANIC 👍";
     }
 
     //? Componente a ejecutar esta aplicacion, y por el tipo de metodo detectará que es un filtro ⬇️
