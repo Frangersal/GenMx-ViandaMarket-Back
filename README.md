@@ -23,11 +23,11 @@ El backend está diseñado para ofrecer un servicio seguro y eficiente:
 
 ## 🚀 Ejecución Local
 
-> **⚠️ Importante:** Para ver la aplicación completa en funcionamiento (interfaz gráfica), también necesitarás el frontend. Puedes verlo desplegado en: **[Vianda Market Frontend](https://viandamarket-front-production.up.railway.app/)**.
+> **⚠️ Importante:** Para ver la aplicación completa en funcionamiento (interfaz gráfica), también necesitarás el frontend. Puedes encontrar su repositorio aquí: **[Vianda Market Frontend](https://github.com/Frangersal/GenMx-ViandaMarket-Front)**.
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone <URL_DEL_REPOSITORIO_BACKEND>
+   git clone git@github.com:Frangersal/GenMx-ViandaMarket-Back.git
    cd GenMx-ViandaMarket-Back
    ```
 2. Configura la base de datos:
@@ -41,3 +41,5 @@ El backend está diseñado para ofrecer un servicio seguro y eficiente:
      ```
      *(En Windows: `gradlew.bat bootRun`)*
 4. El servidor se levantará de forma local en el puerto `8080` (ej: `http://localhost:8080`).
+5. Para verificar de forma rápida si la API está activa, puedes abrir en tu navegador o usar una herramienta como Postman la siguiente URL de prueba:
+   - `http://localhost:8080/api/test` *(Deberías ver el mensaje de confirmación "DON'T PANIC 👍").*
